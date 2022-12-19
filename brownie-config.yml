@@ -1,0 +1,15 @@
+dotenv: .env
+networks:
+  goerli:
+    weth_address: ${WETH_GOERLI_ADDRESS}
+    dai_address: ${DAI_GOERLI_ADDRESS}
+    lending_pool_adr_provider: ${LENDING_POOL_ADDRESSES_PROVIDER_GOERLI_ADDRESS}
+    dai_usd_price_feed: ${DAI_USD_GOERLI_PRICE_FEED}
+    eth_usd_price_feed: ${ETH_USD_GOERLI_PRICE_FEED}
+  mainnet-fork-dev:
+    weth_address: ${WETH_MAINNET_ADDRESS}
+    dai_address: ${DAI_MAINNET_ADDRESS}
+    lending_pool_adr_provider: ${LENDING_POOL_ADDRESSES_PROVIDER_MAINNET_ADDRESS}
+    dai_eth_price_feed: ${DAI_ETH_MAINNET_PRICE_FEED}
+wallets:
+  from_key: ${PRIVATE_KEY}
